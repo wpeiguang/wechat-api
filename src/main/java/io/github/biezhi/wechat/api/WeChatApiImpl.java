@@ -1067,7 +1067,7 @@ public class WeChatApiImpl implements WeChatApi {
      */
     @Override
     public boolean sendText(String toUserName, String msg) {
-        DateUtils.sendSleep();
+//        DateUtils.sendSleep();
         String url   = String.format("%s/webwxsendmsg?pass_ticket=%s", bot.session().getUrl(), bot.session().getPassTicket());
         String msgId = System.currentTimeMillis() / 1000 + StringUtils.random(6);
 
